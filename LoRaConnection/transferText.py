@@ -37,7 +37,7 @@ class LoRaSend(LoRa):
         lorawan = LoRaWAN.new(nwskey, appskey)
         while True:
             data = create_list(hex_to_list(image_to_hex('/home/hieu/Desktop/test.jpeg')))
-            i = 532
+            i = 0
             while i < len(data):
                 self.tx_counter=0
                 lorawan.create(MHDR.UNCONF_DATA_UP, {'devaddr': devaddr, 'fcnt': i, 'data': list(map(ord,data[i]))})

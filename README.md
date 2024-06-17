@@ -2,7 +2,7 @@
 A project that I made on myself for my thesis 1, using library to transfer image from one node to gateway.\
 Thanks so much to [jeroennijhof](https://github.com/jeroennijhof/LoRaWAN) for providing a free LoRaWAN library for Python.
 # What is LoRaWAN
-Well LoRAWAN is a standard for device using LoRa to communicate, if you want to deep dive, go to Google or Youtube will have a clear explanation about this.#
+Well LoRAWAN is a standard for device using LoRa to communicate, if you want to deep dive, go to Google or Youtube will have a clear explanation about this.
 # What kind of hardwares do you need ?
 First of all, 2 Raspberry Pi (any version you like). Any modules which come with the chip SX1276/1277/1278/1279 can be used on this project. Some picture for the hardwares if you're wondering:\
 <img src="https://github.com/buihuy1203/A-Complete-LoRaWAN-Image-Transfer/assets/85066488/b938c7cc-125f-429c-9647-a5ed523dcd9d" alt="Raspberry Pi 5" width="300"/>\

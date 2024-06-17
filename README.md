@@ -9,7 +9,7 @@ As you can see here this is the Raspberry Pi 5.\
 This is the module Ra-01H, which supports 868-915MHz. You can find the datasheet here: [Datasheet](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjcvvm0o-OGAxVHoq8BHZTkCo4QFnoECBMQAQ&url=https%3A%2F%2Fcdn.ozdisan.com%2FETicaret_Dosya%2F632831_134737.pdf&usg=AOvVaw1aTMZMt4EjTAqB1iLpbwlU&opi=89978449)\
 And also need some antennas so that the LoRa module can communicate with each other. Find them on the market, make sure to find the right frequency.
 # How to run
-Just simply follow [board_config.py](board_config.py) in the folder SX1276 to connect the pin to Raspberry Pi.\
+Just simply follow [board_config.py](LoRaConnection/SX127x/board_config.py) in the folder SX1276 to connect the pin to Raspberry Pi.\
 ```
  # Note that the BCOM numbering for the GPIOs is used.
     DIO0 = 22   # RaspPi GPIO 22

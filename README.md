@@ -69,7 +69,7 @@ I suggest that if you want to save your time, you should transfer an image which
 # Wait, any updates ?
 Currently, this repo just only receive and send from node and gateway. I just add some kind of fixing error payload, such as wrong frame sequence or wrong node address, not much but still the basic things to avoid while transfering mutiple frames. Overall, this is still version 1.0 so maybe in the future, I will support more (maybe including server in the gateway or saving payload every 1 minutes)
 # That is, you did it
-If you send image successfully, congratulations. Although sending image through LoRaWAN is very slow since the payload size of LoRaWAN only about 240 - 245 bytes. But it still transfers successfully, so this is kind like an experiement. And yeah, LoRa can transfer very far long away, so it's still good for transfering short message, don't use this for transferring image if you are doing it commercially.\
+If you send image successfully, congratulations. Although sending image through LoRaWAN is very slow since the payload size of LoRaWAN only about 240 - 245 bytes. But it still transfers successfully, so this is kind like an experiement. And yeah, LoRa can transfer very far long away, so it's still good for transfering short message, don't use this for transferring image if you are doing it commercially.
 
 ![image](https://github.com/buihuy1203/A-Complete-LoRaWAN-Image-Transfer/assets/85066488/930e35fd-c3c0-415a-bfad-c9d7034f2ecd)
 

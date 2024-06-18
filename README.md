@@ -11,12 +11,12 @@ As you can see here this is the Raspberry Pi 5.\
 This is the module Ra-01H, which supports 868-915MHz. You can find the datasheet here: [Datasheet](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjcvvm0o-OGAxVHoq8BHZTkCo4QFnoECBMQAQ&url=https%3A%2F%2Fcdn.ozdisan.com%2FETicaret_Dosya%2F632831_134737.pdf&usg=AOvVaw1aTMZMt4EjTAqB1iLpbwlU&opi=89978449)\
 And also need some antennas so that the LoRa module can communicate with each other. Find them on the market, make sure to find the right frequency.
 # How to run
-##Step 1:
+## Step 1:
 Install the library cryptodome so that it can encrypt the information.
 ```bash
 pip install pycryptodome
 ```
-##Step 2: 
+## Step 2: 
 Just simply follow [board_config.py](LoRaConnection/SX127x/board_config.py) in the folder SX1276 to connect the pin to Raspberry Pi.
 ```python
  # Note that the BCOM numbering for the GPIOs is used.
@@ -36,7 +36,7 @@ Just simply follow [board_config.py](LoRaConnection/SX127x/board_config.py) in t
     low_band = False
 ```
 After that, you are ready to go. Make sure to connect the pins correctly, you can test them through this file [lora_util.py](LoRaConnection/lora_util.py)\
-##Step 3: 
+## Step 3: 
 You need to check the directories for saving and reading images. This is my directory so remmember to check the directory again\
 First in file [LoRaGateWay.py](LoRaReceiver/LoRaGateWay.py) 
 ```python
@@ -58,7 +58,7 @@ And then in file [transferText.py](LoRaConnection/transferText.py)
  data = create_list(hex_to_list(image_to_hex('/home/hieu/Desktop/test.jpeg')))
 ```
 That's all directories you need to fix, we are ready to go
-##Step 4:
+## Step 4:
 Simply, running these two files [transferText.py](LoRaConnection/transferText.py) and [LoRaGateWay.py](LoRaReceiver/LoRaGateWay.py), one on a Raspberry Pi, one on other Raspberry Pi and you are good to go.
 # Attention
 Yes, bugs everywhere, so you should be careful while sending images through LoRa. Sometimes, the data will stop transferring a frame of a picture and the node stops working, so to send it from where it stops, just replace this variable in [transferText.py](LoRaConnection/transferText.py)
@@ -66,7 +66,13 @@ Yes, bugs everywhere, so you should be careful while sending images through LoRa
 i = 0 #Replace it with the frame number which was dropped
 ```
 I suggest that if you want to save your time, you should transfer an image which have about 25kB below, so that the connection won't be disconnected and the data won't be corrupted
+# Wait, any updates ?
+Currently, this repo just only receive and send from node and gateway. I just add some kind of fixing error payload, such as wrong frame sequence or wrong node address, not much but still the basic things to avoid while transfering mutiple frames. Overall, this is still version 1.0 so maybe in the future, I will support more (maybe including server in the gateway or saving payload every 1 minutes)
 # That is, you did it
 If you send image successfully, congratulations. Although sending image through LoRaWAN is very slow since the payload size of LoRaWAN only about 240 - 245 bytes. But it still transfers successfully, so this is kind like an experiement. And yeah, LoRa can transfer very far long away, so it's still good for transfering short message, don't use this for transferring image if you are doing it commercially.\
+
+![image](https://github.com/buihuy1203/A-Complete-LoRaWAN-Image-Transfer/assets/85066488/51c2f344-6137-4582-abb3-7ddf7964dd48)
+
 Thank you for visiting my project. If any problems happen to the code, just create an issue and I will solve it as soon as possible. And if you like the project, don't forget to add a star. See ya
+
 

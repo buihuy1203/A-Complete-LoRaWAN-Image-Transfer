@@ -71,7 +71,7 @@ Currently, this repo just only receive and send from node and gateway. I just ad
 # That is, you did it
 If you send image successfully, congratulations. Although sending image through LoRaWAN is very slow since the payload size of LoRaWAN only about 240 - 245 bytes. But it still transfers successfully, so this is kind like an experiement. And yeah, LoRa can transfer very far long away, so it's still good for transfering short message, don't use this for transferring image if you are doing it commercially.\
 
-![image](https://github.com/buihuy1203/A-Complete-LoRaWAN-Image-Transfer/assets/85066488/51c2f344-6137-4582-abb3-7ddf7964dd48)
+![image](https://github.com/buihuy1203/A-Complete-LoRaWAN-Image-Transfer/assets/85066488/930e35fd-c3c0-415a-bfad-c9d7034f2ecd)
 
 Thank you for visiting my project. If any problems happen to the code, just create an issue and I will solve it as soon as possible. And if you like the project, don't forget to add a star. See ya
 
